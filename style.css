@@ -60,10 +60,10 @@ table {
 
 .navbar-content{
     float: right;
-    background-color: #435334;
+    background-color: #CEDEBD;
     padding: 10px;
     border-radius: 8px;
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbar-content2{
@@ -74,16 +74,19 @@ table {
 a{
     padding: 8px;
     font-size: 16px;
-    color: white;
+    color: #435334;
 }
 
 a:hover{
-    color: red;
+    color: #9EB384;
 }
 
 .banner{
     background-color: beige;
     border-radius: 8px;
+    margin-left: 40px;
+    margin-right: 60px;
+    color: #435334;
 }
 
 .row{
@@ -93,4 +96,46 @@ a:hover{
 
 body{
     background-color: #9EB384;
+    background-image: url(pic/pattern2.jpg);
+    background-size: cover;
+}
+
+h3{
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.LS{
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #CEDEBD;
+    border-radius: 8px;
+    color: #435334;
+    -webkit-columns: 2;
+}
+.contentLS{
+    margin-top: -5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.LSBT{
+    background-color: #435334;
+    color: #CEDEBD;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-left: 160px;
+}
+.pic1{
+    width: 356px;
+    height: 193px;
+    border-radius: 6px;
+}
+
+.PS{
+    background-color: #9EB384;
+    padding: 20px;
+    margin-top: 60px;
+    border-radius: 8px;
 }
