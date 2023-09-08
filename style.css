@@ -47,6 +47,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #9EB384;
+        background-image: url(pic/pattern2.jpg);
+        background-size: cover;
+    }
+}
 
 .logo{
     float: left;
@@ -82,23 +89,31 @@ a:hover{
 }
 
 .banner{
-    background-color: beige;
+    background-image: url(pic/banner1.png);
+    background-size: auto ;
     border-radius: 8px;
-    margin-left: 40px;
-    margin-right: 60px;
-    color: #435334;
+    margin-left: 310px;
+    margin-right: 300px;
+    color: peachpuff;
 }
 
 .row{
     margin-top: 80px;
     padding: 20px;
+    -webkit-column-count: 2;
+    border-radius: 10px;
+}
+.picSD{
+    width: 360px;
+    height: 280px;
+    margin-left: 200px;
 }
 
-body{
-    background-color: #9EB384;
-    background-image: url(pic/pattern2.jpg);
-    background-size: cover;
+.contentSD{
+    background-color: #CEDEBD;
 }
+
+
 
 h3{
     margin-top: 5px;
@@ -125,12 +140,11 @@ h3{
     color: #CEDEBD;
     padding: 8px 12px;
     border-radius: 6px;
-    margin-left: 160px;
+    margin-left: 150px;
 }
-.pic1{
-    width: 356px;
-    height: 193px;
+.vidLS{
     border-radius: 6px;
+
 }
 
 .PS{
