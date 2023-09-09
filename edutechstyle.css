@@ -9,7 +9,7 @@ body {
     padding: 0px;
     font-family: 'Open Sans',sans-serif;
     //background-image: url(pic/pattern2.jpg);
-    background-color: #CEDEBD;
+    background-color: #FAF1E4;
 }
 
 .wrapper {
@@ -17,17 +17,29 @@ body {
     margin: auto;
     position: relative;
 }
+.wrapper1{
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #9EB384;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
 
 .logo a {
     font-size: 50px;
     font-weight: 800;
     float: left;
-    font-family: courier;
-    color: #364f6b;
+    font-family: 'comic sans ms' ;
+    color:white;
+    margin-left: 15px;
 }
 
 .menu {
     float: right;
+    color: #EAC696;
 }
 
 nav {
@@ -55,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px;
@@ -63,13 +75,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration:;
+    background-color: #435334;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5px;
 }
 
 section {
     margin: auto;
     display: flex;
     margin-bottom: 50px;
+}
+
+img{
+    margin: 15px;
 }
 
 iframe{
@@ -87,7 +107,7 @@ iframe{
     font-size: 20px;
     font-weight: bold;
     font-family: 'comic sans ms';
-    color: #364f6b;
+    color: #435334;
 }
 
 h2 {
@@ -95,7 +115,7 @@ h2 {
     font-weight: 800;
     font-size: 45px;
     margin-bottom: 20px;
-    color: black;
+    color: #9EB384;
     width: 100%;
     line-height: 50px;
 }
@@ -111,7 +131,7 @@ h3 {
 }
 
 a.tbl-biru {
-    background: #3f72af;
+    background: #435334;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
@@ -121,28 +141,50 @@ a.tbl-biru {
 }
 
 a.tbl-biru:hover {
-    background: #fc5185;
+    background: #9EB384;
     text-decoration: none;
 }
 
 a.tbl-pink {
-    background: #fc5185;
+    background: #435334;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
-    color: #FFFFFF;
+    color: white;
     cursor: pointer;
     font-weight: bold;
 }
 
 a.tbl-pink:hover {
-    background: #3f72af;
+    background: #9EB384;
     text-decoration: none;
 }
 
 p {
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.team-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic-team {
+    width: 15%;
+    margin: 0 auto;
+}
+
+.pic-team img {
+    width: 150px;
+    border-radius: 50%;
 }
 
 #copyright {
@@ -187,5 +229,9 @@ p {
         display: block;
         width: 100%;
         height: auto;
+    }
+
+    .pic-team {
+        width: 50%;
     }
 }
