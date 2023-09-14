@@ -62,7 +62,7 @@ nav ul li a:hover {
 }
 
 a.tbl-biru {
-    background: #3f72af;
+    background: #9EB384;
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 20px 15px 20px;
@@ -83,7 +83,34 @@ iframe {
 }
 
 .subcontent-container{
-    padding:5px;
+    padding:5px 2px;
+    margin: 10px 5px;
+}
+
+.sub-article{
+  margin: 10px 5px;
+  padding: 5px ;
+  border-radius: 5px;
+  background:#9EB384;
+  color: white;
+  width: 200px;
+  height: 30px;
+}
+
+.poin-article{
+  margin: 0;
+  padding: 5px 2px;
+  font-weight: bold;
+}
+
+p{
+  margin: 5px;
+  padding: 2px;
+}
+
+#poin-poin{
+  padding: 2px;
+  margin: 3px;
 }
 
 @media screen and (max-width: 991.98px) {
