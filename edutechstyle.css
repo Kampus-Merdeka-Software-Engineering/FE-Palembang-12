@@ -165,6 +165,10 @@ p {
     padding: 10px 0px 10px 0px;
 }
 
+.content{
+    text-align: justify;
+}
+
 .tengah {
     text-align: center;
     width: 100%;
