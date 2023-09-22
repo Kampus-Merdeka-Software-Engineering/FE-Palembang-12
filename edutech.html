@@ -12,11 +12,10 @@
             <div class="logo"><a href=''>BeSmart</a></div>
             <div class="menu">
                 <ul>
-                    <li><a href="edutech.html">Home</a></li>
-                    <li><a href="#aboutus">About us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                </ul>
+                    <li><a href="edutech.html" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">Home</a></li>
+                    <li><a href="#aboutus" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">About us</a></li>
+                    <li><a href="#contact" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">Contact</a></li>
+                    <li><a href="courses.html" onmouseover="highlightNavItem(this)" onmouseout="unhighlightNavItem(this)">Courses</a></li>
             </div>
         </div>
     </nav>
@@ -30,7 +29,7 @@
                 <h4>Improve your skills for free!</h4>
                 <p class="content">Tentunya kalian tidak asing mendengar istilah tersebut bukan? Self development disebut juga sebagai ‘pengembangan diri’. Self development adalah suatu strategi atau cara yang dilakukan dan diusahakan oleh individu guna mengembangkan kesadaran diri (self awareness), potensi, bakat, keterampilan, dan kemampuan.</p>
                 <p class="content">Dengan demikian, kami hadirkan kursus untuk pengembangan diri atau self-development untuk meningkatkan kualitas pribadi kita di masa depan </p>
-                <p><a href="" class="tbl-pink">Let's Study</a></p>
+               <p><a href="" class="tbl-pink" onclick="showAlert()">Let's Study</a></p>
             </div>
         </section>
 
@@ -57,7 +56,7 @@
                     <p>Improve your skills for free!</p>
                     <p class="content">Ada salah satu kemampuan penting dalam hidup untuk menghadapi berbagai situasi apapun, baik itu di sekolah atau di tempat kerja. Apa itu? Ya, kemampuan tersebut yaitu Public Speaking. Dalam public speaking, dituntut untuk bisa berbicara secara efektif agar penyampaiannya jelas dan sesuai dengan tujuan pembicaraan. Melalui kemampuan public speaking yang baik, seseorang dapat dinilai lebih berkarakter di depan publik. Kunci dari kesuksesan public speaking sendiri bukan hanya perkara berani tampil di depan umum, tetapi juga bagaimana kamu bisa menyampaikan ide dan pemikiranmu.</p>
                     <p class="content">Lalu, bagaimana memiliki kemampuan public speaking yang baik agar dapat didengar dan dinikmati oleh banyak orang?</p>
-                    <p><a href="" class="tbl-pink">Belajar disini!</a></p>
+                    <p><a href="" class="tbl-pink">Pelajari Lebih Lanjut</a></p>
                 </div>
             </section>
 
@@ -68,7 +67,7 @@
                 <h2>Growth Mindset</h2>
                 <p class="content">Apakah kamu pernah berpikir bahwa kesuksesan dapat diraih tidak hanya mengandalkan kemampuan dan bakat saja? Dalam kehidupan seseorang ternyata, mengandalkan kemampuan dan bakat saja tidak cukup untuk meraih kesuksesan. Ada faktor lain yang dapat mengantar seseorang memcapai kesuksesan, yaitu mindset atau pola pikir. Menurut Dr. Carol S. Dweck, seorang psikolog di Stanford University, ada dua pola pikir manusia, yaitu growth mindset dan fixed mindset. Istilah ini diperkenalkan pertama kali di dalam bukunya yang berjudul Mindset: The New Psychology of Success dan menjelaskan bahwa growth mindset merupakan salah satu kunci bagi individu untuk meraih kesuksesan.</p>
                 <p>Nah, bagaimana sebenarnya growth mindset dapat memengaruhi kesuksesan seseorang?</p>
-                <p><a href="" class="tbl-biru">Mari Belajar!</a></p>
+                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
             </div>
             <img style="width: fit-content; height: fit-content; margin: auto; margin-left: 15px;" src="pic/Asset 2.png" alt="">
         </section>
@@ -164,6 +163,20 @@
             &copy; 2023. <b>Kelompok 12 RevoU Tech Academy Batch 5</b> All Rights Reserved.
         </div>
     </div>
-            
+<!-- Script JavaScript -->
+   <script>
+        function highlightNavItem(item) {
+            item.style.color = "#F39F5A"; // Ubah warna teks saat mouse over
+        }
+
+        function unhighlightNavItem(item) {
+            item.style.color = "#FFFFFF"; // Kembalikan warna teks saat mouse out
+        }
+        function showAlert() {
+        // Menampilkan pesan peringatan saat tombol "Let's Study" diklik
+        alert("Anda akan memulai kursus Self-Development, selamat belajar!");
+      
+    }
+    </script>       
 </body>
 </html>
