@@ -15,7 +15,8 @@
                 <li><a href="edutech.html">Home</a></li>
                 <li><a href="#aboutus">About us</a></li>
                 <li><a href="courses.html">Courses</a></li>
-                <li><input type="text" placeholder="Search">
+                <li><input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton">Submit</button>
                   <ul id="kolomSearch">
                     <li>Growth Mindset</li>
                     <li>Public Speaking</li>
@@ -332,5 +333,36 @@
                       Selain kesehatan fisik, kondisi mental juga harus diperhatikan dalam pola hidup sehat. Untuk mental yang sehat, dapat mengelola stres dengan melakukan meditasi secara rutin. Selain meditasi, melakukan hobi dan kesenangan saat akhir pekan juga bisa mengurangi tingkat stres.</li></ul>
                 </div>
     </div>
+
+<!--Script JavaScript-->
+<script>
+// Mendapatkan elemen input pencarian
+const searchInput = document.getElementById('searchInput');
+
+// Mendapatkan semua elemen produk
+const allProducts = document.querySelectorAll('.subcontent-container');
+
+// Menambahkan event listener untuk input pencarian saat pengguna mengetik
+searchInput.addEventListener('input', () => {
+  searchProducts();
+});
+
+// Fungsi untuk melakukan pencarian produk
+function searchProducts() {
+  const filter = searchInput.value.trim().toLowerCase();
+
+  // Iterasi melalui semua elemen produk
+  allProducts.forEach((product) => {
+    const productName = product.querySelector('h2').innerText.toLowerCase();
+
+    // Memeriksa apakah nama produk mengandung kata kunci pencarian
+    if (productName.includes(filter)) {
+      product.style.display = 'block'; // Menampilkan produk jika cocok
+    } else {
+      product.style.display = 'none'; // Menyembunyikan produk jika tidak cocok
+    }
+  });
+}
+</script>
 </body>
 </html>
