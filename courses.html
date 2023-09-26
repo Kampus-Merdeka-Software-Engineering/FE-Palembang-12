@@ -6,6 +6,95 @@
     <title>Courses</title>
     <link rel="stylesheet" href="courses.css">
 </head>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+<style>
+  #dropbtn {
+  background: #435334;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#searchInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 6px 4px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  padding: 6px 8px 6px 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#searchInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  display: grid;
+  margin-left: 1500px;
+  margin-top: -100px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  /* min-width: 130px; */
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 70px;
+
+ 
+ 
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* text-align: center; */
+  
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: grid;}
+</style>
 <body style="background-image: url('https://images.app.goo.gl/wn473UdAdyo6EvmDA');">
   <nav style="background-color: #FAF1E4;">
     <div class="wrapper1">
@@ -15,22 +104,29 @@
                 <li><a href="edutech.html">Home</a></li>
                 <li><a href="#aboutus">About us</a></li>
                 <li><a href="courses.html">Courses</a></li>
-                <li><input type="text" id="searchInput" placeholder="Search...">
-                <button id="searchButton">Submit</button>
-                  <ul id="kolomSearch">
-                    <li>Growth Mindset</li>
-                    <li>Public Speaking</li>
-                    <li>Leadership</li>
-                    <li>Healty Life</li>
-                </li>
+                <li><button onclick="myFunction()" id="dropbtn">Materi</button></li>
             </ul>
+            
+                
         </div>
     </div>
   </nav>
-
-    <div class="content-container">
-        <div class="subcontent-container">
-            <h2 class="judul">Growth Mindset</h2>
+<!-- dropdown search -->
+  <div class="dropdown">
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" id="searchInput" onkeyup="filterFunction()" placeholder="Search...">
+        <a href="#GM">Growth Mindset</a>
+        <a href="#PS">Public Speaking</a>
+        <a href="#LS">Leadership</a>
+        <a href="#HL">Healty Life</a>
+        <a href="#MS">Managing Stress</a>
+        <a href="#SL">Self Love</a>
+      </div>  
+  </div>
+<!-- sampai sini -->
+    <div id="contentcourses" class="content-container">
+        <div class="subcontent-container1">
+            <h2 id="GM" class="judul"><a href="#">Growth Mindset</a></h2>
             <section class="gridvideo">
               <div id="video" class="vid1">
               <h3 class="label">Apa itu Growth Mindset?</h3>
@@ -89,7 +185,7 @@
           </div>
         <hr class="solid">
         <div class="subcontent-container">
-            <h2>Leadership</h2>
+            <h2 id="LS" class="judul"><a href="#">Leadership</a></h2>
             <p class="article">Seperti yang kamu ketahui, dalam kehidupan terutama berkarier terdapat berbagai kemampuan yang bisa menjadi representasi atas kualitas dirimu. Salah satu kemampuan yang cukup sering dicari yaitu leadership. Sederhananya leadership adalah kemampuan yang menunjukkan tingkat kepemimpinan dari seseorang.Leadership adalah kemampuan untuk memimpin sekelompok orang untuk mencapai tujuan tertentu. Kemampuan ini termasuk mengelola dan memotivasi orang lain, agar dapat bersama-sama menggapai hal yang diimpikan. Pada beberapa pendapat, leadership ini juga digunakan sebagai istilah untuk menggambarkan cara atau gaya kepemimpinan seseorang.</p>
             <p class="article">Namun, menurut Kevin Kruse yang dikutip dari Forbes, leadership bukan hanya sekedar pemimpin yang memiliki pengikut, melainkan berbentuk pengaruh sosial yang dapat memaksimalkan upaya orang lain untuk mencapai suatu tujuan. Sedangkan berdasarkan artikel HBR, pemimpin yang baik adalah orang yang berhasil mengelola anggotanya untuk mencapai tujuan tertentu dan mampu melakukannya hari demi hari, tahun demi tahun dalam berbagai keadaan. Di sisi lain, dalam dunia kerja leadership skill adalah kemampuan kepemimpinan yang sangat penting, terutama dalam mengelola anggota tim. Sebab, dalam dunia kerja leadership skill adalah kemampuan kepemimpinan yang sangat penting, terutama dalam mengelola anggota tim. Secara umum kemampuan ini juga terdiri dari beberapa skill seperti:</p>
             <ul class="list-article">
@@ -142,7 +238,7 @@
         </div>
         <hr class="solid">
         <div class="subcontent-container">
-            <h2 class="judul">Managing Stress</h2>
+            <h2 id="MS" class="judul"><a href="#">Managing Stress</a></h2>
             <p class="article">Kita semua saat ini hidup di tengah dunia yang rentan menimbulkan stres. Seperti halnya orang dewasa, anak-anak pun mengalami hal yang sama.Ada begitu banyak perubahan besar yang sedang terjadi di dunia, tetapi ada banyak pula hal-hal sehari-hari yang bisa menyebabkan stres pada anak. Contohnya, situasi negatif di rumah, kekerasan di sekolah, ataupun ujian. Situasi positif pun, seperti pindah rumah atau harus berkenalan dengan teman baru, seringkali bisa menyebabkan stres.</p>
             <p class="article">Stres adalah perasaan yang umumnya dapat kita rasakan saat berada di bawah tekanan, merasa kewalahan, atau kesulitan menghadapi suatu situasi. Stres dalam batas tertentu bisa berdampak positif dan memotivasi kita untuk mencapai suatu tujuan, seperti mengerjakan tes atau berpidato. Namun, stres yang berlebihan, apalagi jika terasa sulit dikendalikan, dapat berdampak negatif terhadap suasana hati, kesehatan fisik dan mental, dan hubungan kita dengan orang lain.</p>
             <p class="article">Pengalaman menghadapi stres pada anak tidak selalu sama dengan orang dewasa. . Di kalangan orang dewasa, stres terkait pekerjaan sangat umum terjadi. Namun, bagi anak, stres terjadi ketika mereka tidak bisa menghadapi situasi yang mengandung ancaman, situasi sulit, atau situasi yang menyakitkan, antara lain:</p>
@@ -184,7 +280,7 @@
         </div>
         <hr class="solid">
         <div class="subcontent-container">
-            <h2 class="judul">Self Love</h2>
+            <h2 id="SL" class="judul"><a href="#">Self Love</a></h2>
             <section class="gridvideo">
               <div id="video" class="vid1">
               <h3 class="label">Tips Mencintai Diri Sendiri</h3>
@@ -244,7 +340,7 @@
             </div>
             <hr class="solid">
             <div class="subcontent-container" frameborder="0" allowfullscreen>
-              <h2 class="judul">Public Speaking</h2>
+              <h2 id="PS" class="judul"><a href="#">Public Speaking</a></h2>
                 <p class="article">Ada salah satu kemampuan penting dalam hidup untuk menghadapi berbagai situasi apapun, baik itu di sekolah atau di tempat kerja. Apa itu? Ya, kemampuan tersebut yaitu Public Speaking. Dalam public speaking, dituntut untuk bisa berbicara secara efektif agar penyampaiannya jelas dan sesuai dengan tujuan pembicaraan. Melalui kemampuan public speaking yang baik, seseorang dapat dinilai lebih berkarakter di depan publik. Kunci dari kesuksesan public speaking sendiri bukan hanya perkara berani tampil di depan umum, tetapi juga bagaimana kamu bisa menyampaikan ide dan pemikiranmu.</p>
 
                 <p class="article">Mungkin beberapa orang sering merasa kurang percaya diri?  Berikut kami rangkum beberapa tips public speaking bagi pemula yang bisa coba dirumah.</p>
@@ -285,7 +381,7 @@
                 </div>
                 <hr class="solid">
                 <div class="subcontent-container">
-                    <h2 class="judul">Healthy Life</h2>
+                    <h2 id="HL" class="judul"><a href="#">Healthy Life</a></h2>
                     <section class="gridvideo">
                       <div id="video" class="vid1">
                       <h3 class="label">Hidup Sehat dan Glow Up</h3>
@@ -340,7 +436,7 @@
 const searchInput = document.getElementById('searchInput');
 
 // Mendapatkan semua elemen produk
-const allProducts = document.querySelectorAll('.subcontent-container');
+const allProducts = document.querySelectorAll('.judul');
 
 // Menambahkan event listener untuk input pencarian saat pengguna mengetik
 searchInput.addEventListener('input', () => {
@@ -353,14 +449,14 @@ function searchProducts() {
 
   // Iterasi melalui semua elemen produk
   allProducts.forEach((product) => {
-    const productName = product.querySelector('h2').innerText.toLowerCase();
+    const productName = product.querySelector('a').innerText.toLowerCase();
 
     // Memeriksa apakah nama produk mengandung kata kunci pencarian
     if (productName.includes(filter)) {
-      product.style.display = 'block'; // Menampilkan produk jika cocok
-    } else {
-      product.style.display = 'none'; // Menyembunyikan produk jika tidak cocok
-    }
+       product.style.display = 'block'; // Menampilkan produk jika cocok
+     } else {
+       product.style.display = 'none'; // Menyembunyikan produk jika tidak cocok
+     }
   });
 }
 </script>
