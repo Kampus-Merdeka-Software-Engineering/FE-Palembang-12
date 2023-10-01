@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Mindset</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+<style>
+  #dropbtn {
+  background: #435334;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#searchInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 6px 4px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  padding: 6px 8px 6px 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#searchInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  display: grid;
+  margin-left: 1500px;
+  margin-top: -100px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  /* min-width: 130px; */
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 70px;
+
+ 
+ 
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* text-align: center; */
+  
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: grid;}
+</style>
+<body style="background-image: url('https://images.app.goo.gl/wn473UdAdyo6EvmDA');">
+  <nav style="background-color: #FAF1E4;">
+    <div class="wrapper1">
+        <div class="logo"><a href=''>BeSmart</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="edutech.html">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><button onclick="myFunction()" id="dropbtn">Materi</button></li>
+            </ul>
+            
+                
+        </div>
+    </div>
+  </nav>
+<!-- dropdown search -->
+  <div class="dropdown">
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" id="searchInput" onkeyup="filterFunction()" placeholder="Search...">
+        <a href="#GM">Growth Mindset</a>
+        <a href="#PS">Public Speaking</a>
+        <a href="#LS">Leadership</a>
+        <a href="#HL">Healty Life</a>
+        <a href="#MS">Managing Stress</a>
+        <a href="#SL">Self Love</a>
+      </div>  
+  </div>
+
+  <hr class="solid">
+  <div class="subcontent-container">
+      <h2 id="SL" class="judul"><a href="#">Self Love</a></h2>
+      <section class="gridvideo">
+        <div id="video" class="vid1">
+        <h3 class="label">Tips Mencintai Diri Sendiri</h3>
+      <iframe width="345" height="232"
+      src="https://youtube.com/embed/RcivgAUbnv8"frameborder="0" allowfullscreen>
+      </iframe>
+      </div>
+      <div class="vid2">
+      <h3 class="label">Self-Love: Sadar, Utuh, Penuh</h3>             
+      <iframe width="345" height="232"
+      src="https://youtube.com/embed/AD1TLJHUD8o" frameborder="0" allowfullscreen>
+      </iframe>
+      </div>
+      <div class="vid3">
+      <h3 class="label">Kenapa Self-Love Penting?</h3>             
+      <iframe width="345" height="232"
+      src="https://youtube.com/embed/qsZnnaAJCE4" frameborder="0" allowfullscreen>
+      </iframe>
+      </div>
+      <div class="vid4">
+      <h3 class="label">Biasakan Self-love</h3>   
+      <iframe width="345" height="232"
+      src="https://youtube.com/embed/732GIIMY59w" frameborder="0" allowfullscreen>
+      </iframe>
+      </div>  
+    </section>
+      <p class="article">Self-love adalah perilaku positif yang melibatkan menerima dan menghormati diri sendiri. Mencintai diri sendiri bukan berarti memenuhi semua keinginan diri sendiri, tetapi memperlakukan dan menerima diri sendiri dengan baik dan apa adanya. Self-love sangat penting untuk kesehatan mental dan dapat membuat diri kita menjadi lebih baik. Saat self-love diterapkan, kita akan merasa lebih mudah untuk berpikir positif, termasuk saat marah, kecewa, atau sedih, karena hal tersebut adalah bentuk dari penerimaan diri.</p>
+
+      <p class="article">Berikut adalah beberapa tips untuk meningkatkan self-love :</p>
+      <ul class="list-article">
+         <li>Kenali diri sendiri Mengenali diri sendiri adalah langkah pertama untuk mencintai diri sendiri. Ketika kita mengenali diri kita sendiri, kita akan lebih mudah menerima kelebihan dan kekurangan yang ada pada diri kita.</li>
+         <li>Berhenti membandingkan diri dengan orang lain. Seringkali kita merasa tidak cukup baik karena membandingkan diri dengan orang lain. Padahal, setiap orang memiliki kelebihan dan kekurangan masing-masing. Jangan terlalu fokus pada kekurangan diri sendiri dan mulai menghargai kelebihan yang ada pada diri kita.</li>
+         <li>Jangan terlalu keras pada diri sendiri Ketika kita terlalu keras pada diri sendiri, kita cenderung merasa tidak cukup baik. Mulailah memberikan penghargaan pada diri sendiri ketika berhasil mencapai sesuatu, meskipun itu hal kecil.</li>
+         <li>Lakukan hal-hal yang membuat kita bahagia Melakukan hal-hal yang membuat kita bahagia dapat meningkatkan self-love. Dengan mengalokasikan waktu untuk melakukan hal-hal yang kita sukai, seperti membaca buku, menonton film, atau berolahraga.</li>
+         <li>Jangan takut untuk meminta bantuan Ketika kita merasa kesulitan, jangan takut untuk meminta bantuan. Meminta bantuan bukan berarti kita lemah, tetapi justru menunjukkan bahwa kita peduli pada diri sendiri dan ingin mencapai tujuan dengan lebih baik.</li>
+         <li>Jangan terlalu fokus pada kesalahan Ketika kita melakukan kesalahan, jangan terlalu fokus pada kesalahan tersebut. Sebaliknya, cobalah belajar dari kesalahan tersebut dan mulai berpikir positif.</li>
+         <li>Jangan terlalu sering membandingkan diri dengan versi diri sendiri di masa lalu Ketika kita terlalu sering membandingkan diri dengan versi diri sendiri di masa lalu, kita cenderung merasa tidak cukup baik. Padahal, setiap orang selalu berkembang dan berubah seiring berjalannya waktu. Fokuslah pada diri sendiri saat ini dan mulai mencintai diri sendiri.</li>
+    </ul>
+       <p class="article">Dalam rangka meningkatkan self-love, penting untuk mengenali diri sendiri, berhenti membandingkan diri dengan orang lain, tidak terlalu keras pada diri sendiri, melakukan hal-hal yang membuat kita bahagia, tidak takut untuk meminta bantuan, tidak terlalu fokus pada kesalahan, dan tidak terlalu sering membandingkan diri dengan versi diri sendiri di masa depan.</li>
+        
+       <p class="article">Self-love merupakan perasaan yang wajib dimiliki setiap orang. Penting untuk menjadikan kita dan kehidupan kita lebih baik. Ketika kita benar-benar mulai mencintai diri sendiri, segala sesuatunya mulai berjalan sesuai keinginan kita dan kehidupan itu sendiri mulai terasa benar-benar indah sebagaimana kehidupan yang dimaksudkan untuk dirasakan. Mencintai diri sendiri adalah kunci hidup bahagia. Ketika kita mencintai diri apa adanya, tanpa syarat, kehidupan mencerminkan hal itu kembali kepada kita.</p> 
+        
+       <p class="article">Mencintai diri sendiri memiliki banyak manfaat. Manfaat pertama adalah kepuasan hidup yang lebih besar. Ketika kita semakin mencintai diri sendiri, kita langsung mengubah perspektif kita terhadap dunia. Pada akhirnya, untuk menjalani kehidupan yang memuaskan, yang pertama dan terpenting, harus mencintai diri sendiri dan percaya bahwa kehidupan juga mencintai kita. Mencintai diri sendiri akan membuat kit lebih terinspirasi untuk mencapai tingkatan baru untuk menjadi apa yang kita hargai. Jika kita menjadikan self-love sebagai prioritas utama, itu akan memberi kebahagiaan sejati dan abadi, kedamaian batin, dan akan meningkatkan kesehatan dan kesejahteraan.</p>
+        
+       <p class="article"> Aspek - Aspek Self-Love</p>
+       <p class="article"> Merujuk psychology.binus.ac.id , pentingnya kemampuan self love ini dipengaruhi oleh empat aspek yaitu self awareness, self worth, self esteem, dan self care. Keempat aspek ini saling berkaitan satu sama lainnya, jadi bagi kamu yang ingin meningkatkan kemampuan self love.</p> 
+       <ul class="list-article">
+        <li> 
+        Self Awareness.
+        Self-awareness merupakan kesadaran diri seseorang akan proses berpikirnya. Proses berpikir yang dimaksud disini yaitu pikiran yang dimiliki individu, bagaimana pikiran tersebut mempengaruhi individu, dan bagaimana pengaruh emosi terhadap tindakan individu. Kesadaran diri yang baik dapat membantu untuk mengetahui bagaimana cara menanggapi berbagai macam hal maupun situasi secara efektif. Dengan begitu, individu dapat terhindar dari situasi yang menurutnya kurang nyaman. Satu tips yang dapat dilikakukan untuk meningkatkan self-awareness adalah membuat catatan harian mengenai pikiran, emosi, dan tindakan yang dilakukan.</li>
+        <li>Self-worth. 
+        Self-worth adalah keyakinan yang dimiliki seseorang mengenai dirinya. Self-worth yaitu ketika seseorang menyadari bahwa dirinya berharga terlepas dari pencapaian atau kualitas yang dimilikinya. Seseorang tidak perlu memenuhi kriteria maupun melakukan suatu hal tertentu untuk merasa berharga.</li> 
+        <li>Self-esteem. 
+        Berbeda dengan self-worth, self-esteem lebih terikat pada kualitas dan pencapaian yang dimiliki individu. Self-esteem yaitu dimana individu merasa puas dan nyaman dengan siapa ia sebenarnya, dimana ia berada, hingga hal-hal yang dimilikinya. Self-esteem seseorang dapat meningkat jika ia memiliki tingkat self-worth yang baik.</li> 
+        <li>Self-care. 
+        Self-care merupakan tindakan yang dilakukan seseorang untuk menjaga kesehatan dirinya. Individu dapat melakukan hal-hal yang ia sukai untuk menjaga kesehatan dirinya. Dimulai dari mendengarkan musik, menonton film, menghabiskan waktu bersama orang-orang yang membuatnya nyaman, dan masih banyak lagi.</li>
+      </div>
+
+  <!--Script JavaScript-->
+<script>
+    // Mendapatkan elemen input pencarian
+    const searchInput = document.getElementById('searchInput');
+    
+    // Mendapatkan semua elemen produk
+    const allProducts = document.querySelectorAll('.judul');
+    
+    // Menambahkan event listener untuk input pencarian saat pengguna mengetik
+    searchInput.addEventListener('input', () => {
+      searchProducts();
+    });
+    
+    // Fungsi untuk melakukan pencarian produk
+    function searchProducts() {
+      const filter = searchInput.value.trim().toLowerCase();
+    
+      // Iterasi melalui semua elemen produk
+      allProducts.forEach((product) => {
+        const productName = product.querySelector('a').innerText.toLowerCase();
+    
+        // Memeriksa apakah nama produk mengandung kata kunci pencarian
+        if (productName.includes(filter)) {
+           product.style.display = 'block'; // Menampilkan produk jika cocok
+         } else {
+           product.style.display = 'none'; // Menyembunyikan produk jika tidak cocok
+         }
+      });
+    }
+    </script>
+    </body>
+    </html>

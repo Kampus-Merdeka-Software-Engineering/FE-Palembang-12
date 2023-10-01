@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Speaking</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+<style>
+  #dropbtn {
+  background: #435334;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#searchInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 6px 4px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  padding: 6px 8px 6px 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#searchInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  display: grid;
+  margin-left: 1500px;
+  margin-top: -100px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  /* min-width: 130px; */
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 70px;
+
+ 
+ 
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* text-align: center; */
+  
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: grid;}
+</style>
+<body style="background-image: url('https://images.app.goo.gl/wn473UdAdyo6EvmDA');">
+  <nav style="background-color: #FAF1E4;">
+    <div class="wrapper1">
+        <div class="logo"><a href=''>BeSmart</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="edutech.html">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><button onclick="myFunction()" id="dropbtn">Materi</button></li>
+            </ul>
+            
+                
+        </div>
+    </div>
+  </nav>
+<!-- dropdown search -->
+  <div class="dropdown">
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" id="searchInput" onkeyup="filterFunction()" placeholder="Search...">
+        <a href="#GM">Growth Mindset</a>
+        <a href="#PS">Public Speaking</a>
+        <a href="#LS">Leadership</a>
+        <a href="#HL">Healty Life</a>
+        <a href="#MS">Managing Stress</a>
+        <a href="#SL">Self Love</a>
+      </div>  
+  </div>
+
+  <div class="subcontent-container" frameborder="0" allowfullscreen>
+    <h2 id="PS" class="judul"><a href="#">Public Speaking</a></h2>
+      <p class="article">Ada salah satu kemampuan penting dalam hidup untuk menghadapi berbagai situasi apapun, baik itu di sekolah atau di tempat kerja. Apa itu? Ya, kemampuan tersebut yaitu Public Speaking. Dalam public speaking, dituntut untuk bisa berbicara secara efektif agar penyampaiannya jelas dan sesuai dengan tujuan pembicaraan. Melalui kemampuan public speaking yang baik, seseorang dapat dinilai lebih berkarakter di depan publik. Kunci dari kesuksesan public speaking sendiri bukan hanya perkara berani tampil di depan umum, tetapi juga bagaimana kamu bisa menyampaikan ide dan pemikiranmu.</p>
+
+      <p class="article">Mungkin beberapa orang sering merasa kurang percaya diri?  Berikut kami rangkum beberapa tips public speaking bagi pemula yang bisa coba dirumah.</p>
+      <ul class="list-article">  
+        <li>Kuasai materi dan tuliskan poin-poin penting. Menulis catatan kecil yang hanya berisi poin-poin penting. Selain itu, coba menetapkan materi yang akan disajikan kepada audiens dan usahakan menggunakan bahasa yang mudah dipahami. Karena Menguasai materi pembicaraan juga dapat mengurangi rasa grogi ketika tampil didepan audience.</li>
+        <li>Gunakan bahasa tubuh dan kontak mata. Kontak mata merupakan salah satu hal yang perlu diperhatikan saat melakukan public speaking. Seorang public speaking dapat menggunakan bahasa tubuh, terutama tangan, untuk menekankan materi yang disampaikan.Yang perlu diperhatikan adalah, harus memperhatikan kontak mata audiens dengan baik. Hal ini digunakan agar dapat mengontrol fokus audiens. Pastikan bahwa gerakan tubuh selaras dengan apa yang sampaikan dan hindari gerakan tubuh yang menunjukkan bahwa sedang merasa nervous.</li>
+        <li>Pahami Audience dan lawan bicara. Berusaha menjaga komunikasi agar tetap hidup bahkan ketika berbicara di depan banyak orang. Dengan mengenal siapa yang akan diberi materi, maka akan terjalin kedekatan antara speaker dan audience. Dengan ini pula, dapat memilih dengan tepat penggunaan kata dan gaya bahasa yang akan dipakai. Hal ini penting untuk dilakukan agar bisa menggunakan gaya bahasa yang sesuai dengan audiens. </li>
+        <li>Bicara secara perlahan dan jelas.</li>
+        <li>Hindari rasa pesimis. Perlu diperhatikan bahwa tanamkan rasa optimis ketika ingin memulai public speaking. Di depan umum,  harus menunjukkan kepercayaan diri yang baik, hal ini akan membantu dalam menguasai dan menyampaikan materi yang ingin dibahas secara jelas.</li>
+        <li>Hindari filler word atau kata pengisi.  Filler word atau kata pengisi adalah kata yang sering digunakan oleh pembicara ketika sedang berpikir atau grogi. Kata-kata tersebut misalnya “hmmm”, “eh”, “aaaa”, dan lain-lain. Jika kata-kata ini keluar, maka tingkat profesionalisme akan menurun. Sekali atau dua kali masih terdengar wajar, namun jika dilakukan berulang-ulang tentu akan menggangu. Jadi, berlatihlah untuk mengurangi kata-kata tersebut. Yaitu dengan beri jeda 1 atau 2 detik untuk mengisi kekosongan.</li>
+        <li>Cobalah untuk berlatih di depan cermin. Teknik agar menjadi lancar dalam public speaking, mungkin bisa melatih diri sendiri di depan cermin atau di depan teman. Hal ini dapat dilakukan jika merasa belum siap berbicara di depan umum. Ketika merasa cukup baik untuk berlatih di depan cermin, berlatihlah juga di depan orang lain. Atau dapat mengundang teman dan keluarga untuk menjadi audience.</p>
+          <section class="gridvideo">
+            <div id="video" class="vid1">
+            <h3 class="label">Teknik Dasar</h3>
+          <iframe width="345" height="232"
+          src="https://youtube.com/embed/47ZCSPmzskw"frameborder="0" allowfullscreen>
+          </iframe>
+          </div>
+          <div class="vid2">
+          <h3 class="label">Percaya Diri</h3>             
+          <iframe width="345" height="232"
+          src="https://youtube.com/embed/G0miAe22r8c" frameborder="0" allowfullscreen>
+          </iframe>
+          </div>
+          <div class="vid3">
+          <h3 class="label">Persiapan Materi</h3>             
+          <iframe width="345" height="232"
+          src="https://youtube.com/embed/GW-fwRNWyTA" frameborder="0" allowfullscreen>
+          </iframe>
+          </div>
+          <div class="vid4">
+          <h3 class="label">Berbicara dengan Lancar</h3>   
+          <iframe width="345" height="232"
+          src="https://youtube.com/embed/rKOp0DpfbGY" frameborder="0" allowfullscreen>
+          </iframe>
+          </div>  
+        </section>                            
+      </div>
+
+  <!--Script JavaScript-->
+<script>
+    // Mendapatkan elemen input pencarian
+    const searchInput = document.getElementById('searchInput');
+    
+    // Mendapatkan semua elemen produk
+    const allProducts = document.querySelectorAll('.judul');
+    
+    // Menambahkan event listener untuk input pencarian saat pengguna mengetik
+    searchInput.addEventListener('input', () => {
+      searchProducts();
+    });
+    
+    // Fungsi untuk melakukan pencarian produk
+    function searchProducts() {
+      const filter = searchInput.value.trim().toLowerCase();
+    
+      // Iterasi melalui semua elemen produk
+      allProducts.forEach((product) => {
+        const productName = product.querySelector('a').innerText.toLowerCase();
+    
+        // Memeriksa apakah nama produk mengandung kata kunci pencarian
+        if (productName.includes(filter)) {
+           product.style.display = 'block'; // Menampilkan produk jika cocok
+         } else {
+           product.style.display = 'none'; // Menyembunyikan produk jika tidak cocok
+         }
+      });
+    }
+    </script>
+    </body>
+    </html>

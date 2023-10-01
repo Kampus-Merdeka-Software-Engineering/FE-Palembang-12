@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Mindset</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+<style>
+  #dropbtn {
+  background: #435334;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#searchInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 6px 4px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  padding: 6px 8px 6px 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#searchInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  display: grid;
+  margin-left: 1500px;
+  margin-top: -100px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  /* min-width: 130px; */
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 70px;
+
+ 
+ 
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* text-align: center; */
+  
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: grid;}
+</style>
+<body>
+<body style="background-image: url('https://images.app.goo.gl/wn473UdAdyo6EvmDA');">
+  <nav style="background-color: #FAF1E4;">
+    <div class="wrapper1">
+        <div class="logo"><a href=''>BeSmart</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="edutech.html">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><button onclick="myFunction()" id="dropbtn">Materi</button></li>
+            </ul>
+            
+                
+        </div>
+    </div>
+  </nav>
+<!-- dropdown search -->
+  <div class="dropdown">
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" id="searchInput" onkeyup="filterFunction()" placeholder="Search...">
+        <a href="#GM">Growth Mindset</a>
+        <a href="#PS">Public Speaking</a>
+        <a href="#LS">Leadership</a>
+        <a href="#HL">Healty Life</a>
+        <a href="#MS">Managing Stress</a>
+        <a href="#SL">Self Love</a>
+      </div>  
+  </div>
+
+  <div id="contentcourses" class="content-container">
+    <div class="subcontent-container1">
+        <h2 id="GM" class="judul"><a href="#">Growth Mindset</a></h2>
+        <section class="gridvideo">
+          <div id="video" class="vid1">
+          <h3 class="label">Apa itu Growth Mindset?</h3>
+        <iframe width="345" height="232"
+        src="https://youtube.com/embed/PRgXfx2MxOM?si=56tpPg3lQoWsOSts"frameborder="0" allowfullscreen>
+        </iframe>
+        </div>
+        <div class="vid2">
+        <h3 class="label">Mengembangkan Growth Mindset</h3>             
+        <iframe width="345" height="232"
+        src="https://youtube.com/embed/j279goG7cYc" frameborder="0" allowfullscreen>
+        </iframe>
+        </div>
+        <div class="vid3">
+        <h3 class="label">Mengubah Mindset</h3>             
+        <iframe width="345" height="232"
+        src="https://youtube.com/embed/j279goG7cYc" frameborder="0" allowfullscreen>
+        </iframe>
+        </div>
+        <div class="vid4">
+        <h3 class="label">Sukses dan Mindset</h3>   
+        <iframe width="345" height="232"
+        src="https://youtube.com/embed/gc3SRWVHS2w" frameborder="0" allowfullscreen>
+        </iframe>
+        </div>  
+      </section>
+        <img src="" alt="">
+        <p class="article">Growth mindset adalah cara berpikir yang membuat individu percaya bahwa kemampuannya dapat dikembangkan dan ditingkatkan melalui dedikasi dan kerja keras. Pola pikir ini berbeda dengan pola pikir tetap, yaitu keyakinan bahwa kemampuan yang dimiliki sudah ditentukan sebelumnya dan tidak dapat diubah. Orang-orang dengan mindset berkembang percaya bahwa mereka dapat belajar dan tumbuh dari kesalahan dan kegagalan mereka, dan bahwa tantangan adalah peluang untuk berkembang. Mereka lebih cenderung menghadapi tantangan baru dan bertahan dalam menghadapi hambatan, dan mencari umpan balik untuk meningkatkan kinerja mereka, karena mereka melihat hal ini sebagai peluang untuk belajar dan berkembang.</p>
+        <p class="article"> Memiliki mindset berkembang dapat memberikan banyak manfaat, termasuk peningkatan ketahanan, motivasi, dan prestasi. Orang-orang dengan pola pikir berkembang lebih cenderung menetapkan tujuan yang menantang bagi diri mereka sendiri dan bekerja keras untuk mencapainya, karena mereka percaya bahwa upaya mereka akan membuahkan hasil dalam jangka panjang. Mereka juga lebih cenderung mencari umpan balik dan menggunakannya untuk meningkatkan kinerja mereka, karena mereka melihat umpan balik sebagai cara untuk belajar dan berkembang.</p>              
+        <p class="article">  Mengembangkan growth mindset tidak selalu mudah, terutama bagi mereka yang selama ini percaya pada pola pikir tetap. Mengembangkan pola pikir berkembang dapat menjadi sebuah tantangan, namun hal ini dapat dilakukan dengan strategi dan dukungan yang tepat.</p>
+        <p class="article">  Ada beberapa cara untuk mengembangkan growth mindset. Berikut beberapa strategi yang dapat membantu individu mengembangkan mindset berkembang :</p>
+        
+          <ul class="list-article">
+            <li>
+              Menerima ketidaksempurnaan :
+              Orang dengan mindset berkembang memahami bahwa membuat kesalahan adalah bagian alami dari proses pembelajaran. Mereka menerima ketidaksempurnaan mereka dan menggunakannya sebagai kesempatan untuk belajar dan berkembang.
+            </li>
+            <li>
+              Melihat tantangan sebagai peluang : 
+              Orang dengan pola pikir berkembang melihat tantangan sebagai peluang untuk belajar dan berkembang. Mereka tidak takut untuk menghadapi tantangan baru dan bersedia berupaya untuk mengatasinya.
+            </li>
+            <li>
+              Mencari umpan balik:
+              Orang-orang dengan pola pikir berkembang secara aktif mencari umpan balik dan menggunakannya untuk meningkatkan kinerja mereka. Mereka melihat umpan balik sebagai cara untuk belajar dan berkembang, bukan sebagai kritik terhadap kemampuan mereka.
+            </li>
+            <li>
+              Fokus pada proses : 
+              Orang dengan pola pikir berkembang fokus pada proses pembelajaran dan pertumbuhan, bukan hanya pada hasil akhir. Mereka memahami bahwa kesuksesan bukan hanya tentang pencapaian suatu tujuan, tetapi juga tentang perjalanan untuk mencapainya.
+            </li>
+            <li>
+              Kelilingi diri dengan pengaruh positif : 
+              Mengelilingi diri dengan orang-orang yang memiliki pola pikir berkembang dapat membantu dalam mengembangkan pola pikir berkembang Anda sendiri. Sikap dan perilaku positif mereka dapat menular dan membantu tetap termotivasi dan fokus pada tujuan Anda.
+            </li>
+          </ul>
+        
+      </div>
+      
+<!--Script JavaScript-->
+<script>
+    // Mendapatkan elemen input pencarian
+    const searchInput = document.getElementById('searchInput');
+    
+    // Mendapatkan semua elemen produk
+    const allProducts = document.querySelectorAll('.judul');
+    
+    // Menambahkan event listener untuk input pencarian saat pengguna mengetik
+    searchInput.addEventListener('input', () => {
+      searchProducts();
+    });
+    
+    // Fungsi untuk melakukan pencarian produk
+    function searchProducts() {
+      const filter = searchInput.value.trim().toLowerCase();
+    
+      // Iterasi melalui semua elemen produk
+      allProducts.forEach((product) => {
+        const productName = product.querySelector('a').innerText.toLowerCase();
+    
+        // Memeriksa apakah nama produk mengandung kata kunci pencarian
+        if (productName.includes(filter)) {
+           product.style.display = 'block'; // Menampilkan produk jika cocok
+         } else {
+           product.style.display = 'none'; // Menyembunyikan produk jika tidak cocok
+         }
+      });
+    }
+    </script>
+    </body>
+    </html>
