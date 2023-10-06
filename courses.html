@@ -673,7 +673,7 @@ function filterFunction() {
 
 const handleSubmitForm = (event) => {
             const formData = new FormData(event.target);
-            console.log({ formData, nama: formData.get('nama'), isi :formData.get('isi') });
+            console.log({ formData, nama: formData.get("nama"), isi :formData.get("isi") });
 
             event.preventDefault();
             fetch("https://be-grup-12-palembang-revou-production.up.railway.app/ulasan.html", {
