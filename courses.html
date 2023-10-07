@@ -676,7 +676,7 @@ const handleSubmitForm = (event) => {
             console.log({ formData, nama: formData.get("nama"), isi :formData.get("isi") });
 
             event.preventDefault();
-            fetch("https://be-grup-12-palembang-revou-production.up.railway.app/ulasan", {
+            fetch("api/ulasan", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
