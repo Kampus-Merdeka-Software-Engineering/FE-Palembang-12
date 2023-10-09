@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+<style>
+  #dropbtn {
+  background: #435334;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#searchInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 6px 4px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  padding: 6px 8px 6px 15px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#searchInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  display: grid;
+  margin-left: 1500px;
+  margin-top: -100px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  /* min-width: 130px; */
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 0%;
+  padding: 0%;
+  margin-top: 70px;
+
+ 
+ 
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  /* text-align: center; */
+
+}
+ 
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: grid;}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: #435334;
+    padding: 10px;
+    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+} 
+</style>
+<body style="background-image: url('https://images.app.goo.gl/wn473UdAdyo6EvmDA');">
+  <nav style="background-color: #FAF1E4;">
+    <div class="wrapper1">
+        <div class="logo"><a href=''>BeSmart</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="edutech.html">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><button onclick="myFunction()" id="dropbtn">Materi</button></li>
+            </ul>
+            
+                
+        </div>
+    </div>
+  </nav>
+<!-- dropdown search -->
+  <div class="dropdown">
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" id="searchInput" onkeyup="filterFunction()" placeholder="Search...">
+        <a href="#GM">Growth Mindset</a>
+        <a href="#PS">Public Speaking</a>
+        <a href="#LS">Leadership</a>
+        <a href="#HL">Healty Life</a>
+        <a href="#MS">Managing Stress</a>
+        <a href="#SL">Self Love</a>
+      </div>                            
+      </div>
+      <hr class="solid">
+      <div class="subcontent-container" frameborder="0" allowfullscreen>
+          <h2 id="HL" class="judul">About Us</h2>
+            <h2 class="judul">About Us</h2>
+          
+          <p class="article">Kami adalah mahasiswa yang mengikuti kegiatan Magang dan Studi Indepen bersertifikat Batch 5. Program ini merupakan program yang disediakan oleh Kementrian Pendidikan, Budaya, Riset dan Teknologi Indonesia. Program ini berjalan selama 5 bulan dari bulan Agustus hingga Desember dengan tujuan menyiapkan generasi mudah yang siap bekerja.</p>
+          <p class="article">PKegiatan ini dilakukan dalam 2 cycle, yaitu software engineering dan data analyst. Mahasiswa akan dibagi menjadi beberapa tim yang berisikan 12 anggota dan dari tim tersebut akan dibagi lagi menjadi 2 grup. Adapun grup 12 Tim F Section Palembang terdiri dari:</p>
+          <ul class="list-article">
+            <li>Kak Yesa sebagai Section Manager</li>
+            <li>Kak Nipe sebaga Mentor</li>
+            <li>Taszkia Aulia Putri sebagai Group Leader</li>
+            <li>Nova Eko Prastyo dan Novita W.K. Siahaan sebagai tim Backend</li>
+            <li>Rizka Adityani Solihin dan Vivaldi Ahmad Setiadi sebagai tim Frontend</li>
+            <li>Terakhir, Aulia'u Ulya Muftiiza sebagai Quality Assurance</li></ul>
+      </div>
+</div>
+  <!--Script JavaScript-->
+<script>
+    // Mendapatkan elemen input pencarian
+    const searchInput = document.getElementById('searchInput');
+    
+    // // Mendapatkan semua elemen produk
+    // const allProducts = document.querySelectorAll('.judul');
+    
+    // Menambahkan event listener untuk input pencarian saat pengguna mengetik
+    searchInput.addEventListener('input', () => {
+      searchProducts();
+    });
+    
+    // Fungsi untuk melakukan pencarian produk
+    function searchProducts() {
+      const filter = searchInput.value.trim().toLowerCase();
+    
+      // Iterasi melalui semua elemen produk
+      allProducts.forEach((product) => {
+        const productName = product.querySelector('a').innerText.toLowerCase();
+    
+        // Memeriksa apakah nama produk mengandung kata kunci pencarian
+        if (productName.includes(filter)) {
+           product.style.display = 'block'; // Menampilkan produk jika cocok
+         } else {
+           product.style.display = 'none'; // Menyembunyikan produk jika tidak cocok
+         }
+      });
+    }
+    </script>
+    </body>
+    </html>
