@@ -8,7 +8,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans',sans-serif;
-    //background-image: url(pic/pattern2.jpg);
+    background-image: url(pic/pattern2.jpg);
     background-color: #FAF1E4;
 }
 
@@ -75,7 +75,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration:;
+    text-decoration: none;
     background-color: #435334;
     border-radius: 10px;
     padding: 10px;
@@ -176,6 +176,7 @@ p {
 
 .team-list {
     width: 100%;
+    font-family: 'Lucida Sans Unicode';
     position: relative;
     display: flex;
     flex-wrap: wrap;
