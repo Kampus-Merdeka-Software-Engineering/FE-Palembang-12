@@ -176,7 +176,6 @@ p {
 
 .team-list {
     width: 100%;
-    font-family: 'Lucida Sans Unicode';
     position: relative;
     display: flex;
     flex-wrap: wrap;
