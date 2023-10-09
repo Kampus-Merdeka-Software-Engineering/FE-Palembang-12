@@ -107,9 +107,32 @@ body {
     width: 12rem;
 }
 
+#nama-ulasan {
+    border-radius: 5px;
+    border-bottom: 2px solid;
+  }
+
 textarea {
     width: 800px;
+    font-family: 'comic sans ms';
+    border-radius: 5px;
+    border: double ;
 }
+
+#btn-sub {
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+  }
+  
+#btn-sub:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
 
 .logo a {
     font-size: 50px;
@@ -612,7 +635,7 @@ h2{
                 <div>
                   <textarea name="ungkapan" id="isi-ulasan" cols="30" rows="10">Tulis disini yaa..</textarea>
                 </div>
-                  <button id="btn-sub" type="submit">submit</button>
+                  <button id="btn-sub" type="submit">Submit</button>
                 </div>
                 </form>
     </div>
@@ -671,6 +694,12 @@ function filterFunction() {
   }
 }
 
+  
+document.getElementById("btn-sub").onclick = changeText;
+
+function changeText() {
+  document.getElementById("isi-ulasan").innerHTML = "Terima Kasih";
+}
 const formUlasan = document.getElementById('form-ulasan');
 
         formUlasan.addEventListener('submit', async (e) => {
